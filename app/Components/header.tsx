@@ -11,12 +11,10 @@ function Navbar() {
     <nav className="bg-customYellow shadow-md">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex-shrink-0 text-customBlue text-2xl font-bold">
-            MyLogo
+            Hamza
           </div>
 
-          {/* Hamburger Icon (Mobile) */}
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
@@ -39,7 +37,6 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Navbar Links */}
           <div className="hidden lg:flex space-x-8">
           <Link
               href="/"
@@ -69,7 +66,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden ${isOpen ? "block" : "hidden"}`}
         id="mobile-menu"
